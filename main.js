@@ -16,6 +16,13 @@ const period = document.getElementById("period")
 const sub= document.getElementById("sub")
 const mult = document.getElementById("mult")
 const divide = document.getElementById("divide")
+const clear = document.getElementById("clear")
+
+
+period.addEventListener('click', (e) => {
+    console.log(display)
+    display.innerText += e.target.innerText
+})
 
 zero.addEventListener('click', (e) => {
     console.log(display)
@@ -68,7 +75,7 @@ sub.addEventListener('click', (e) => {
 
 // numb.addEventListener('click', (e) => {
 //     numb.innerText += e.target.innerText
-// })  need a for loop, to apply for all class, of numb
+// })  need a for loop, to apply for all class, of numb and buttons
 
 add.addEventListener('click', (e) => {
     console.log(display)
@@ -80,6 +87,18 @@ sum.addEventListener('click', (e) => {
 })
 
 mult.addEventListener('click', (e) => {
-    display.innerText = eval(display.innerText)
+    display.innerText * eval(display.innerText)
 })
 
+clear.addEventListener('click', (e) => {
+    display.innerText = e.target.innerText.slice(0,-1)
+})
+
+     
+
+
+
+     
+// need to find way for multiply to be represented and passed through
+// also, still reduce all numbered equations to numb and have apply to all same with operations.
+// should be for loop, main objective, get calc to basic function, then refine after.
