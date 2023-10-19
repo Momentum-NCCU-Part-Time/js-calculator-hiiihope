@@ -1,0 +1,37 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+.cal-container{
+   display: grid; 
+   grid-template-columns: 100px 100px 100px 100px;
+   
+
+}
+
+.display{
+    border: .5px solid red;
+    height: 50px;
+    width: 30px;
+  
+
+}
+
+.toprow{
+    display: grid;
+    grid-template-columns: 100px 100px 200px;
+}
+
+.number{
+    height: 80px;
+    border: 1px solid blue;
+    background-color: rgb(152, 207, 164);
+
+}
+
+.allclear{
+    
+}
